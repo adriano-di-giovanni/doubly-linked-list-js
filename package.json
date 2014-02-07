@@ -1,0 +1,19 @@
+{
+  "name": "doubly-linked-list-js",
+  "version": "0.1.0",
+  "description": "A DoublyLinkedList JavaScript Universal Module",
+  "main": "DoublyLinkedList.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adriano-di-giovanni/doubly-linked-list-js.git"
+  },
+  "author": "Adriano Di Giovanni <me@adrianodigiovanni.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adriano-di-giovanni/doubly-linked-list-js/issues"
+  },
+  "homepage": "https://github.com/adriano-di-giovanni/doubly-linked-list-js"
+}
