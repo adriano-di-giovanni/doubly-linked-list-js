@@ -4,9 +4,11 @@ A `DoublyLinkedList` Javascript Universal Module.
 
 ## Installation
 
-You may install this package with this command:
+You may install this package using `bower` or `npm`:
 
-`npm install git+ssh://git@github.com:adriano-di-giovanni/node-doubly-linked-list.git`
+`bower install doubly-linked-list-js --save`
+
+`npm install doubly-linked-list-hs --save`
 
 ## Usage
 
