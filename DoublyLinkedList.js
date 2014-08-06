@@ -9,8 +9,13 @@
     root.DoublyLinkedList = factory();
 }
 }(this, function () {
+
   var
     breaker = {};
+
+  var
+    floor = Math.floor,
+    random = Math.random;
 
   function Node(data) {
     this.data = data;
@@ -126,6 +131,16 @@
         node = this._tail;
 
       return (node !== null) ? node.data : null;
+    },
+
+    getRandom: function () {
+
+      var
+        min = 0,
+        max = this.getLength(),
+        rnd = floor(random() * (max - min + 1)) + min;
+
+      return this.getAt(rnd);
     },
 
     getIndexOf: function (data) {

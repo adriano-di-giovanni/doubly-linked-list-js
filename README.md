@@ -33,6 +33,7 @@ var
 * `getFirst()`
 * `getIndexOf(data)`
 * `getLast()`
+* `getRandom()`
 * `getLastIndexOf(data)`
 * `getLength()`
 * `getNext(data)`
