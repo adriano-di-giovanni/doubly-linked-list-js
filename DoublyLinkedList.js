@@ -138,7 +138,7 @@
       var
         min = 0,
         max = this.getLength(),
-        rnd = floor(random() * (max - min + 1)) + min;
+        rnd = floor(random() * (max - min)) + min;
 
       return this.getAt(rnd);
     },
