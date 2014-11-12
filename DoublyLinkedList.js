@@ -175,6 +175,41 @@
       return resultIndex;
     },
 
+    some: function (iterator, fromData, context) {
+
+      var
+        fromNode = this._get(fromData),
+        res = false;
+
+      this._traverse(function (node){
+
+        res = iterator.call(context, node.data);
+
+        if (res){
+          return breaker;
+        }
+      }, fromNode);
+
+      return res;
+    },
+
+    every: function (iterator, fromData, context) {
+      var
+        fromNode = this._get(fromData),
+        res = true;
+
+      this._traverse(function (node){
+
+        res = iterator.call(context, node.data);
+
+        if ( ! res){
+          return breaker;
+        }
+      }, fromNode);
+
+      return res;
+    },
+
     forEach: function (iterator, fromData, context) {
       var
         fromNode = this._get(fromData);
