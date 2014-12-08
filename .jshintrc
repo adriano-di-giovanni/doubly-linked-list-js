@@ -1,17 +1,7 @@
 {
 	"-W015": true,
 	"globals": {
-		"define": true,
-
-		"require": true,
-		"exports": true,
-		"module": true,
-
-		"describe": true,
-		"it": true,
-		"beforeEach": true,
-		"expect": true,
-		"after": true
+		"define": true
 	},
 	"bitwise": true,
 	"camelcase": true,
@@ -29,7 +19,7 @@
 	"quotmark": "single",
 	"undef": true,
 	"unused": true,
-	"strict": true,
+	"strict": false,
 	"trailing": true,
 	"smarttabs": true,
 	"browser": true,

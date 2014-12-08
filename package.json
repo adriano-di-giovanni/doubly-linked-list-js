@@ -1,6 +1,6 @@
 {
   "name": "doubly-linked-list-js",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A DoublyLinkedList JavaScript Universal Module",
   "main": "DoublyLinkedList.js",
   "scripts": {
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/adriano-di-giovanni/doubly-linked-list-js/issues"
   },
-  "homepage": "https://github.com/adriano-di-giovanni/doubly-linked-list-js"
+  "homepage": "https://github.com/adriano-di-giovanni/doubly-linked-list-js",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "matchdep": "^0.3.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-jshint": "^0.10.0"
+  }
 }

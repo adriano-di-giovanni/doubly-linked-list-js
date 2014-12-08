@@ -8,7 +8,7 @@ You may install this package using `bower` or `npm`:
 
 `bower install doubly-linked-list-js --save`
 
-`npm install doubly-linked-list-hs --save`
+`npm install doubly-linked-list-js --save`
 
 ## Usage
 

@@ -42,6 +42,8 @@
     this._isCircular = false;
   }
 
+  DoublyLinkedList.VERSION = '0.1.6';
+
   DoublyLinkedList.forge = function () {
     /* jshint newcap: false */
     return new this();
