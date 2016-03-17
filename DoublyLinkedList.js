@@ -177,6 +177,27 @@
       return resultIndex;
     },
 
+    filter: function (iterator, fromData, context) {
+      var
+        fromNode = this._get(fromData),
+        res = false,
+        result = DoublyLinkedList.forge();
+
+      this._traverse(function (node){
+
+        res = iterator.call(context, node.data);
+
+        // console.log(res);
+        if (res){
+          result.add(node.data);
+        }
+
+      }, fromNode);
+
+      return result;
+
+    },
+
     some: function (iterator, fromData, context) {
 
       var

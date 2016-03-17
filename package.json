@@ -1,6 +1,6 @@
 {
   "name": "doubly-linked-list-js",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A DoublyLinkedList JavaScript Universal Module",
   "main": "DoublyLinkedList.js",
   "scripts": {
