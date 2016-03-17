@@ -183,6 +183,8 @@
         res = false,
         result = DoublyLinkedList.forge();
 
+      if (this._isCircular) { result.makeCircular(); }
+
       this._traverse(function (node){
 
         res = iterator.call(context, node.data);
