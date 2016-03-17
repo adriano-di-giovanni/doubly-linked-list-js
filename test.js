@@ -14,14 +14,16 @@ var
   list.add(createDummy());
   list.add(createDummy());
 
+console.log('LIST');
 list.forEach(function (node){
   console.log(node);
 });
 
-
-var filteredList = list.filter(function (node){
-  return node.id < 5;
+var filteredList = list.filter(function (dummy){
+  return dummy.id < 5;
 });
 
-
-console.log(filteredList);
+console.log('FILTERED LIST');
+filteredList.forEach(function (node){
+  console.log(node);
+});
