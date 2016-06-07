@@ -5,7 +5,7 @@ var createDummy = function(){
 };
 
 var
-  list = DLL.forge();
+  list = DLL.forgeCircular();
 
   list.add(createDummy());
   list.add(createDummy());
@@ -23,7 +23,18 @@ var filteredList = list.filter(function (dummy){
   return dummy.id < 5;
 });
 
-console.log('FILTERED LIST');
+console.log('FILTERED LIST - FOR EACH');
 filteredList.forEach(function (node){
   console.log(node);
+});
+
+console.log('LIST - GET NEXT');
+list.forEach(function (node){
+  console.log('from %s to %s', node.id, list.getNext(node).id);
+});
+
+
+console.log('FILTERED LIST - GET NEXT');
+filteredList.forEach(function (node){
+  console.log('from %s to %s', node.id, filteredList.getNext(node).id);
 });

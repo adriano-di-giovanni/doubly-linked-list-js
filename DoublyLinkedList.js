@@ -161,6 +161,16 @@
       return resultIndex;
     },
 
+    getDistance: function(a, b) {
+      var indexA = this.getIndexOf(a);
+      var indexB = this.getIndexOf(b);
+
+      if (indexA === -1 || indexB === -1) {
+        return -1;
+      }
+      return Math.abs(  indexA - indexB );
+    },
+
     getLastIndexOf: function (data) {
       var
         index = this._length - 1,
