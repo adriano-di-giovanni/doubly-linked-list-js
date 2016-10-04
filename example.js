@@ -38,3 +38,17 @@ console.log('FILTERED LIST - GET NEXT');
 filteredList.forEach(function (node){
   console.log('from %s to %s', node.id, filteredList.getNext(node).id);
 });
+
+
+console.log('REMOVE AT');
+var list2 = DLL.forge();
+
+list2
+    .add('a')
+    .add('b')
+    .add('c')
+    .add('d');
+
+console.log(list2.toString());
+list2.removeAt(0);
+console.log(list2.toString());

@@ -283,8 +283,8 @@
           node.previous.next = node.next;
         }
         this._length -= 1;
-
-        if (isHead || isTail || this._isCircular) {
+        
+        if (this._isCircular && (isHead || isTail) ) {
           this.makeCircular();
         }
 
@@ -302,8 +302,10 @@
       while (node !== null) {
         array.push(node.data);
         node = node.next;
+        if (this._isHead(node)) {
+          return array;
+        }
       }
-
       return array;
     },
 
